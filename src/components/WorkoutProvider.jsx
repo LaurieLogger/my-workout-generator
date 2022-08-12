@@ -17,6 +17,7 @@ const WorkoutProvider = () => {
     <>
       <BankAdder setActivityBank={setActivityBank} />
 
+      {/* //////////////manualGeneratorButtonsBelow///////////////////// */}
       <span className="generator-grouping">
         <form className="generator-grouping">
           <label htmlFor="select-activity" className="input-label light-text">
@@ -48,6 +49,7 @@ const WorkoutProvider = () => {
           </button>
         </form>
       </span>
+      {/* /////////////////autoGeneratorButtonsBelow/////////////////////*/}
     </>
   );
 };
