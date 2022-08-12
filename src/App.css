@@ -2,18 +2,11 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: darkgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +15,55 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+.light-text {
+  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dark-text {
+  color: rgb(14, 221, 24);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-panel {
+  background-color: rgb(14, 221, 24);
+  border: 0.5rem solid rgb(14, 221, 24);
+  border-radius: 2rem;
+}
+
+.light-panel {
+  background-color: white;
+  border: 0.5rem solid rgb(14, 221, 24);
+  border-radius: 2rem;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+}
+
+.tip {
+  font-style: oblique;
+}
+
+.input-label {
+  background-color: rgb(33, 145, 33);
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  font-size: 1.5rem;
+  border: 0.2rem rgb(9, 243, 146) solid;
+}
+
+.input-box {
+  background-color: lightgray;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  font-size: 1.5rem;
+  border: 0.2rem rgb(9, 243, 146) solid;
+  width: 15rem;
+}
+
+#calories-input,
+#zone-input {
+  width: 6rem;
 }
