@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: rgb(14, 221, 24);
+  border-radius: 2rem;
 }
 
 html {
@@ -68,9 +70,32 @@ h2 {
   width: 6rem;
 }
 
-#submit-activity {
+#select-reps {
+  width: 4rem;
+  border-radius: 0rem;
+}
+
+#select-reps-label,
+#select-activity {
+  border-radius: 0rem;
+}
+
+#submit-activity,
+.submit-button {
   background-color: rgb(33, 145, 33);
   border-radius: 2rem;
   font-size: 1.5rem;
   border: 0.2rem rgb(9, 243, 146) solid;
+}
+
+#add-activity-button {
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
+}
+
+.generator-grouping {
+  background-color: rgb(33, 145, 33);
+  border-radius: 2rem;
+  width: fit-content;
+  text-align: center;
 }
