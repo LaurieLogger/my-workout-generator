@@ -60,10 +60,17 @@ h2 {
   border-top-right-radius: 2rem;
   font-size: 1.5rem;
   border: 0.2rem rgb(9, 243, 146) solid;
-  width: 15rem;
+  width: 10rem;
 }
 
 #calories-input,
 #zone-input {
   width: 6rem;
+}
+
+#submit-activity {
+  background-color: rgb(33, 145, 33);
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  border: 0.2rem rgb(9, 243, 146) solid;
 }
