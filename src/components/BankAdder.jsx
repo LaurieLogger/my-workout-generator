@@ -60,12 +60,19 @@ const BankAdder = ({ setActivityBank }) => {
         <label htmlFor="zone-input" className="input-label light-text">
           Workout zone:
         </label>
-        <input
+        <select
           onChange={handleNewZoneChange}
           id="zone-input"
-          type="text"
           className="input-box"
-        />
+        >
+          <option value={""} defaultValue>
+            Select
+          </option>
+          <option value={"Mixed"}>Mixed</option>
+          <option value={"Arms"}>Arms</option>
+          <option value={"Legs"}>Legs</option>
+          <option value={"Core"}>Core</option>
+        </select>
         <br></br>
         <button className="light-text" id="submit-activity">
           Add activity

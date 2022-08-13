@@ -6,12 +6,12 @@ import WorkoutList from "./WorkoutList";
 
 const WorkoutProvider = () => {
   const [activityBank, setActivityBank] = useState([
-    { activity: "Pull-up", cals: 1, zone: "arms" },
-    { activity: "Jump squat", cals: 2, zone: "legs" },
-    { activity: "Burpee", cals: 3, zone: "core" },
-    { activity: "Side lunge", cals: 1, zone: "legs" },
-    { activity: "Press-up", cals: 2, zone: "arms" },
-    { activity: "Sit-up", cals: 2, zone: "core" },
+    { activity: "Pull-up", cals: 1, zone: "Arms" },
+    { activity: "Jump squat", cals: 2, zone: "Legs" },
+    { activity: "Burpee", cals: 3, zone: "Core" },
+    { activity: "Side lunge", cals: 1, zone: "Legs" },
+    { activity: "Press-up", cals: 2, zone: "Arms" },
+    { activity: "Sit-up", cals: 2, zone: "Core" },
   ]);
 
   return (

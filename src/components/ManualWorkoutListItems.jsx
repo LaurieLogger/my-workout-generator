@@ -23,7 +23,7 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
   };
 
   return (
-    <span className="generator-grouping">
+    <section className="generator-grouping">
       <form onSubmit={handleManualWorkoutSubmit} className="generator-grouping">
         <label htmlFor="select-activity" className="input-label light-text">
           Activity
@@ -33,9 +33,7 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           id="select-activity"
           className="input-box"
         >
-          <option value={""} disabled selected>
-            Select
-          </option>
+          <option defaultValue>Select</option>
           {activityBank.map((activity) => {
             return (
               <option value={activity.activity}>{activity.activity}</option>
@@ -47,16 +45,14 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           className="input-label light-text"
           id="select-reps-label"
         >
-          Reps:{" "}
+          Reps:
         </label>
         <select
           onChange={handleAddWorkoutRepsChange}
           id="select-reps"
           className="input-box"
         >
-          <option value={""} disabled selected>
-            Select
-          </option>
+          <option defaultValue>Select</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -67,7 +63,7 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           Add +
         </button>
       </form>
-    </span>
+    </section>
   );
 };
 
