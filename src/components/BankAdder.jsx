@@ -68,7 +68,6 @@ const BankAdder = ({ setActivityBank }) => {
           <option value={""} defaultValue>
             Select
           </option>
-          <option value={"Mixed"}>Mixed</option>
           <option value={"Arms"}>Arms</option>
           <option value={"Legs"}>Legs</option>
           <option value={"Core"}>Core</option>

@@ -8,7 +8,10 @@ const WorkoutList = ({
   splitActivityCals,
 }) => {
   const [workoutListItems, setWorkoutListItems] = useState([]);
-  console.log(workoutListItems, "<<<<<<<This");
+  const handleClear = () => {
+    setWorkoutListItems([]);
+  };
+
   return (
     <>
       <ManualWorkoutListItems
@@ -22,14 +25,18 @@ const WorkoutList = ({
       />
 
       <ul className="light-panel dark-text">
-        {workoutListItems.map(({ activity, reps }) => {
+        {workoutListItems.map(({ activity, reps }, index) => {
           return (
-            <li className="list-text">
+            <li className="list-text" key={index}>
               <span className="list-shape">{reps}</span> {activity}
             </li>
           );
         })}
       </ul>
+
+      <button onClick={handleClear} className="light-text" id="submit-activity">
+        Clear x
+      </button>
     </>
   );
 };
