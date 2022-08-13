@@ -1,5 +1,6 @@
 import BankAdder from "./BankAdder";
 import { useState } from "react";
+import WorkoutList from "./WorkoutList";
 
 //REMEMBER TO ADD TIP GENERATOR ON WORKOUT GENERATION
 
@@ -17,8 +18,10 @@ const WorkoutProvider = () => {
     <>
       <BankAdder setActivityBank={setActivityBank} />
 
+      <WorkoutList activityBank={activityBank} />
+
       {/* //////////////manualGeneratorButtonsBelow///////////////////// */}
-      <span className="generator-grouping">
+      {/* <span className="generator-grouping">
         <form className="generator-grouping">
           <label htmlFor="select-activity" className="input-label light-text">
             Activity
@@ -48,7 +51,7 @@ const WorkoutProvider = () => {
             Add +
           </button>
         </form>
-      </span>
+      </span> */}
       {/* /////////////////autoGeneratorButtonsBelow/////////////////////*/}
     </>
   );
