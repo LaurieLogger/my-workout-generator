@@ -23,7 +23,8 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
   };
 
   return (
-    <section className="generator-grouping">
+    <section className="generator-grouping manual-generate">
+      <p className="light-text">Create Workout</p>
       <form onSubmit={handleManualWorkoutSubmit} className="generator-grouping">
         <label htmlFor="select-activity" className="input-label light-text">
           Activity
@@ -39,7 +40,8 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
               <option value={activity.activity}>{activity.activity}</option>
             );
           })}
-        </select>
+        </select>{" "}
+        <br></br>
         <label
           htmlFor="select-reps"
           className="input-label light-text"
@@ -58,7 +60,8 @@ const ManualWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select>
+        </select>{" "}
+        <br></br>
         <button className="light-text submit-button" id="add-activity-button">
           Add +
         </button>

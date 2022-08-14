@@ -32,13 +32,13 @@ const BankAdder = ({ setActivityBank }) => {
   };
 
   return (
-    <section className="dark-panel">
-      <p className="light-text">
+    <section className="dark-panel adder-and-text">
+      <p className="light-text adder-text">
         Add a new workout activity below or jump right to get stuck in right
         away!
       </p>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="adder">
         <label htmlFor="activity-input" className="input-label light-text">
           Activity:
         </label>

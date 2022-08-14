@@ -24,7 +24,7 @@ const WorkoutList = ({
         setWorkoutListItems={setWorkoutListItems}
       />
 
-      <ul className="light-panel dark-text">
+      <ul className="list-panel dark-text">
         {workoutListItems.map(({ activity, reps }, index) => {
           return (
             <li className="list-text" key={index}>
@@ -34,7 +34,11 @@ const WorkoutList = ({
         })}
       </ul>
 
-      <button onClick={handleClear} className="light-text" id="submit-activity">
+      <button
+        onClick={handleClear}
+        id="submit-activity"
+        className="clear light-text"
+      >
         Clear x
       </button>
     </>

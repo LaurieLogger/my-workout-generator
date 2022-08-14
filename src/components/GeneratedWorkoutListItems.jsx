@@ -57,7 +57,8 @@ const GeneratedWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
   };
 
   return (
-    <section className="generator-grouping">
+    <section className="generator-grouping auto-generate">
+      <p className="light-text">Generate Workout:</p>
       <form onSubmit={handleGenerateWorkout} className="generator-grouping">
         <label htmlFor="select-zone" className="input-label light-text">
           Select Zone
@@ -74,8 +75,8 @@ const GeneratedWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           <option value={"Arms"}>Arms</option>
           <option value={"Legs"}>Legs</option>
           <option value={"Core"}>Core</option>
-        </select>
-
+        </select>{" "}
+        <br></br>
         <label
           htmlFor="select-calories"
           className="input-label light-text"
@@ -89,8 +90,8 @@ const GeneratedWorkoutListItems = ({ setWorkoutListItems, activityBank }) => {
           type="text"
           className="input-box"
           placeholder="Cals"
-        />
-
+        />{" "}
+        <br></br>
         <button className="light-text submit-button" id="generate-workout">
           Generate
         </button>

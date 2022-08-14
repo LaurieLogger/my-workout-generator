@@ -1,11 +1,27 @@
 .App {
   text-align: center;
+}
+
+.container {
+  display: grid;
   background-color: rgb(14, 221, 24);
+  max-width: 120rem;
+  max-height: 120rem;
+  height: 50rem;
   border-radius: 2rem;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 21% 20% 49% 10%;
+  grid-template-areas:
+    "header manual-generate auto-generate"
+    "header list-heading list-heading"
+    "description list list"
+    "adder clear clear";
 }
 
 html {
   background-color: darkgray;
+  padding: 4rem;
+  padding-top: 3rem;
 }
 
 /* .App-header {
@@ -35,8 +51,9 @@ html {
 
 .light-panel {
   background-color: white;
-  border: 0.5rem solid rgb(14, 221, 24);
-  border-radius: 2rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  padding-bottom: 0rem;
+  margin-top: 1.5rem;
 }
 
 h1,
@@ -73,15 +90,15 @@ h2 {
 #select-reps,
 #select-calories {
   width: 4rem;
-  border-radius: 0rem;
+  /* border-radius: 0rem; */
 }
 
-#select-reps-label,
+/* #select-reps-label,
 #select-activity,
 #select-target-cals-label,
 #select-zone {
   border-radius: 0rem;
-}
+} */
 
 #submit-activity,
 .submit-button {
@@ -91,15 +108,72 @@ h2 {
   border: 0.2rem rgb(9, 243, 146) solid;
 }
 
-#add-activity-button,
+/* #add-activity-button,
 #generate-workout {
   border-bottom-left-radius: 0rem;
   border-top-left-radius: 0rem;
-}
+} */
 
 .generator-grouping {
-  background-color: rgb(33, 145, 33);
-  border-radius: 2rem;
-  width: fit-content;
-  text-align: center;
+  /* width: fit-content;
+  height: fit-content; */
+  text-align: left;
+}
+
+/* positioning ///////////////////////////////////////////// */
+
+/* "header manual-generate auto-generate"
+    "description list-heading list-heading"
+    "description list list"
+    "adder clear clear" */
+
+.title {
+  grid-area: header;
+  font-size: 2.4rem;
+  position: relative;
+}
+
+.adder-text {
+  grid-area: description;
+  font-size: 2rem;
+}
+
+.adder {
+  grid-area: adder;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.manual-generate {
+  grid-area: manual-generate;
+  padding-top: 0rem;
+}
+
+.auto-generate {
+  grid-area: auto-generate;
+  padding-top: 0rem;
+}
+
+.workout-header {
+  grid-area: list-heading;
+  border-top: 1rem rgb(14, 221, 24) solid;
+  border-left: 1rem rgb(14, 221, 24) solid;
+  border-right: 1rem rgb(14, 221, 24) solid;
+  padding-bottom: 1rem;
+  font-size: larger;
+}
+
+.list-panel {
+  grid-area: list;
+  background-color: white;
+  border-bottom: 1rem rgb(14, 221, 24) solid;
+  border-left: 1rem rgb(14, 221, 24) solid;
+  border-right: 1rem rgb(14, 221, 24) solid;
+  border-radius: 0rem 0rem 2rem 2rem;
+  margin-top: 0rem;
+  padding: 2rem;
+  font-size: 1.7rem;
+  font-family: fantasy;
 }

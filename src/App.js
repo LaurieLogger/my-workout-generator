@@ -6,9 +6,11 @@ import WorkoutProvider from "./components/WorkoutProvider";
 function App() {
   return (
     <div className="App">
-      <Title />
-      <WorkoutProvider />
-      <WorkoutHeading />
+      <div className="container">
+        <Title />
+        <WorkoutProvider />
+        <WorkoutHeading />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 const WorkoutHeading = () => {
   return (
     <>
-      <div className="light-panel">
+      <div className="light-panel workout-header">
         <h2 className="dark-text">Get Up and Go!</h2>
         <h3 className="tip dark-text">*Tip: "generated tip here"</h3>
       </div>
